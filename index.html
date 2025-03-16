@@ -1,46 +1,42 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skor Oyun</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
 <body>
     <header>
-        <img src="assets/SkorOyunLogo.png" alt="Skor Oyun Logosu" width="200">
-    <h1>Skor Oyun</h1>
-    <p>En iyi oyunları burada oyna!</p>
+        <div class="language-switch">
+            <img id="language-icon" src="assets/usa-flag.png" alt="English" onclick="toggleLanguage()">
+        </div>
+        <h1 id="title">Skor Oyun</h1>
+        <p id="subtitle">En iyi oyunları burada oyna!</p>
     </header>
 
     <section id="games">
-        <h2>Oyun Listesi</h2>
-    <div class="game-grid">
-        <a href="game.html?oyun=oyun1" class="game-card">
-            <img src="assets/oyun1.jpg" alt="Oyun 1">
-        </a>
-        <a href="game.html?oyun=oyun2" class="game-card">
-            <img src="assets/oyun2.jpg" alt="Oyun 2">
-        </a>
-        <a href="game.html?oyun=oyun3" class="game-card">
-            <img src="assets/oyun3.jpg" alt="Oyun 3">
-        </a>
-        <a href="game.html?oyun=oyun4" class="game-card">
-            <img src="assets/oyun4.jpg" alt="Oyun 4">
-        </a>
-        <a href="game.html?oyun=oyun5" class="game-card">
-            <img src="assets/oyun5.jpg" alt="Oyun 5">
-        </a>
-    </div>
+        <h2 id="game-list-title">Oyun Listesi</h2>
+        <div class="game-grid">
+            <a href="game.html?oyun=oyun1" class="game-card">
+                <img src="assets/oyun1.jpg" alt="Oyun 1">
+            </a>
+            <a href="game.html?oyun=oyun2" class="game-card">
+                <img src="assets/oyun2.jpg" alt="Oyun 2">
+            </a>
+            <a href="game.html?oyun=oyun3" class="game-card">
+                <img src="assets/oyun3.jpg" alt="Oyun 3">
+            </a>
+            <a href="game.html?oyun=oyun4" class="game-card">
+                <img src="assets/oyun4.jpg" alt="Oyun 4">
+            </a>
+            <a href="game.html?oyun=oyun5" class="game-card">
+                <img src="assets/oyun5.jpg" alt="Oyun 5">
+            </a>
+        </div>
     </section>
 
-    <h2>Siteyi Telefonundan Aç</h2>
-    <p>Mobil cihazından kolayca erişmek için QR kodu tara!</p>
-    <img id="qr-code" src="assets/qr_code.png" alt="Skor Oyun QR Kodu" width="200">
+    <section id="qr">
+        <h2 id="qr-title">Siteyi Telefonundan Aç</h2>
+        <p id="qr-text">Mobil cihazından kolayca erişmek için QR kodu tara!</p>
+        <img src="assets/qr-code.png" alt="Skor Oyun QR Kodu">
     </section>
 
     <footer>
-        <p>&copy; 2025 Skor Oyun. Tüm hakları saklıdır.</p>
+        <p id="footer-text">&copy; 2025 Skor Oyun. Tüm hakları saklıdır.</p>
     </footer>
+
+    <script src="js/language.js"></script>
 </body>
-</html>
