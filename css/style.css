@@ -1,12 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: linear-gradient(180deg, #FF8C00, #9400D3);
+    background: linear-gradient(180deg, #3023AE, #C86DD7);
     color: white;
 }
 
 header {
-    background: linear-gradient(90deg, #FF8C00, #00BFFF);
+    background: linear-gradient(90deg, #FF6A00, #EE0979);
     color: white;
     padding: 20px;
     text-align: center;
@@ -19,17 +17,18 @@ h1 {
 
 .game-list a {
    display: block;
-    background: linear-gradient(90deg, #00BFFF, #FF8C00);
+    background: linear-gradient(90deg, #C86DD7, #6B0F1A);
     color: white;
     text-decoration: none;
     border-radius: 10px;
     padding: 15px;
     font-weight: bold;
     transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .game-list a:hover {
-    background: linear-gradient(90deg, #FF8C00, #00BFFF);
+   background: linear-gradient(90deg, #6B0F1A, #C86DD7);
     transform: scale(1.05);
 }
 
