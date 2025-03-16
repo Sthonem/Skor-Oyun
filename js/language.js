@@ -9,7 +9,6 @@ function toggleLanguage() {
     document.getElementById("language-icon").style.display = "none";
     document.getElementById("language-icon-tr").style.display = "inline-block";
 }
-}
 
 function toggleLanguageTR() {
     document.getElementById("title").innerText = "Skor Oyun";
