@@ -24,14 +24,14 @@ h1 {
 /* DİL DEĞİŞTİRME BUTONU */
 .language-switch {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    display: flex;
-    gap: 10px; /* Bayraklar arasında boşluk bırakır */
+    top: 10px;
+    right: 10px;
+    width: 50px;  /* Bayrak boyutunu ayarla */
+    height: auto;
 }
 
 .language-switch img {
-    width: 40px;
+    width: 100%;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
