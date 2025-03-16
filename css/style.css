@@ -107,3 +107,10 @@ footer {
     border-radius: 10px;
     font-size: 14px;
 }
+
+.logo-container img {
+    width: 200px; /* Genişlik */
+    height: auto; /* Orantıyı korumak için otomatik yükseklik */
+    display: block;
+    margin: 0 auto; /* Ortalamak için */
+}

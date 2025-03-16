@@ -8,12 +8,17 @@
 </head>
 <body>
     <header>
-        <!-- Dil değiştirme butonu -->
+        <!-- Dil değiştirme butonları -->
         <div class="language-switch">
             <img id="language-icon" src="assets/usa-flag.png" alt="English" onclick="toggleLanguage()">
+            <img id="language-icon-tr" src="assets/tr-flag.png" alt="Türkçe" onclick="toggleLanguageTR()" style="display: none;">
         </div>
+
         <!-- Site Logosu -->
-        <img src="assets/SkorOyunLogo.png" alt="Skor Oyun Logosu" class="site-logo">
+        <div class="logo-container">
+            <img src="assets/SkorOyunLogo.png" alt="Skor Oyun Logosu" class="site-logo">
+        </div>
+
         <h1 id="title">Skor Oyun</h1>
         <p id="subtitle">En iyi oyunları burada oyna!</p>
     </header>
