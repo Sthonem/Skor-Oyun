@@ -1,4 +1,3 @@
-/* Genel Ayarlar */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,9 +5,6 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* HEADER */
@@ -19,24 +15,25 @@ header {
     text-align: center;
     border-radius: 10px;
     position: relative;
-    width: 100%;
 }
 
-/* Dil değiştirme butonları */
+/* Site Logosu */
+.site-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Dil değiştirme butonu */
 .language-switch {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    display: flex;
-    gap: 10px;
+    top: 10px;
+    right: 10px;
 }
 
 .language-switch img {
     width: 40px;
     height: auto;
     cursor: pointer;
-    border: 2px solid white;
-    border-radius: 5px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -44,7 +41,7 @@ header {
     transform: scale(1.1);
 }
 
-/* Oyun Listesi Bölümü */
+/* Oyun Listesi */
 #games {
     text-align: center;
     padding: 20px;
@@ -54,7 +51,7 @@ header {
     max-width: 90%;
 }
 
-/* Oyun Kutuları */
+/* Oyun Kartları */
 .game-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -89,15 +86,15 @@ header {
     transform: scale(1.05);
 }
 
-/* QR Kod Bölümü */
+/* QR Kodu */
 #qr {
     text-align: center;
     margin-top: 30px;
 }
 
-#qr img {
-    width: 200px;
-    border: 5px solid white;
+.qr-image {
+    width: 150px;
+    border: 3px solid white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
@@ -109,5 +106,4 @@ footer {
     background: linear-gradient(90deg, #8A2387, #E94057, #F27121);
     border-radius: 10px;
     font-size: 14px;
-    width: 100%;
 }
