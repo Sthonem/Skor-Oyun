@@ -17,21 +17,17 @@ header {
     position: relative;
 }
 
-h1 {
-    margin: 0;
-}
-
 /* DİL DEĞİŞTİRME BUTONU */
 .language-switch {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 50px;  /* Bayrak boyutunu ayarla */
-    height: auto;
+    display: flex;
+    gap: 10px;
 }
 
 .language-switch img {
-    width: 100%;
+    width: 40px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -54,11 +50,11 @@ h1 {
 /* OYUN KUTULARI */
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Mobil uyumluluk için */
+    grid-template-columns: repeat(5, 1fr); /* Tam 5 tane oyun yan yana */
     gap: 15px;
     padding: 20px;
     justify-content: center;
-    max-width: 900px; /* Geniş ekranlarda aşırı yayılmasını engeller */
+    max-width: 900px;
     margin: auto;
 }
 

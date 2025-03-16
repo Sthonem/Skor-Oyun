@@ -8,16 +8,22 @@ function toggleLanguage() {
         document.getElementById("qr-title").innerText = "Open on Your Phone";
         document.getElementById("qr-text").innerText = "Scan the QR code for easy access on mobile!";
         document.getElementById("footer-text").innerText = "© 2025 Score Game. All rights reserved.";
-        document.getElementById("language-icon").src = "assets/tr-flag.png";
-        document.getElementById("language-icon").alt = "Türkçe";
-    } else {
-        document.getElementById("title").innerText = "Skor Oyun";
-        document.getElementById("subtitle").innerText = "En iyi oyunları burada oyna!";
-        document.getElementById("game-list-title").innerText = "Oyun Listesi";
-        document.getElementById("qr-title").innerText = "Siteyi Telefonundan Aç";
-        document.getElementById("qr-text").innerText = "Mobil cihazından kolayca erişmek için QR kodu tara!";
-        document.getElementById("footer-text").innerText = "© 2025 Skor Oyun. Tüm hakları saklıdır.";
-        document.getElementById("language-icon").src = "assets/usa-flag.png";
-        document.getElementById("language-icon").alt = "English";
+        
+        // Bayrakları değiştir
+        document.getElementById("language-icon").style.display = "none";
+        document.getElementById("language-icon-tr").style.display = "inline-block";
     }
+}
+
+function toggleLanguageTR() {
+    document.getElementById("title").innerText = "Skor Oyun";
+    document.getElementById("subtitle").innerText = "En iyi oyunları burada oyna!";
+    document.getElementById("game-list-title").innerText = "Oyun Listesi";
+    document.getElementById("qr-title").innerText = "Siteyi Telefonundan Aç";
+    document.getElementById("qr-text").innerText = "Mobil cihazından kolayca erişmek için QR kodu tara!";
+    document.getElementById("footer-text").innerText = "© 2025 Skor Oyun. Tüm hakları saklıdır.";
+
+    // Bayrakları değiştir
+    document.getElementById("language-icon").style.display = "inline-block";
+    document.getElementById("language-icon-tr").style.display = "none";
 }
