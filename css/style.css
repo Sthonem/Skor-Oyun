@@ -14,10 +14,31 @@ header {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    position: relative;
 }
 
 h1 {
     margin: 0;
+}
+
+/* DİL DEĞİŞTİRME BUTONU */
+.language-switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px; /* Bayraklar arasında boşluk bırakır */
+}
+
+.language-switch img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.language-switch img:hover {
+    transform: scale(1.1);
 }
 
 /* OYUN LİSTESİ BÖLÜMÜ */
@@ -33,10 +54,12 @@ h1 {
 /* OYUN KUTULARI */
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 tane yan yana oyun kutusu */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Mobil uyumluluk için */
     gap: 15px;
     padding: 20px;
     justify-content: center;
+    max-width: 900px; /* Geniş ekranlarda aşırı yayılmasını engeller */
+    margin: auto;
 }
 
 .game-card {
@@ -76,21 +99,11 @@ h1 {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Sağ Üst Köşedeki Dil Değiştirme Butonu */
-.language-switch {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+/* FOOTER */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #8A2387, #E94057, #F27121);
+    border-radius: 10px;
+    font-size: 14px;
 }
-
-.language-switch img {
-    width: 40px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-.language-switch img:hover {
-    transform: scale(1.1);
-}
-
