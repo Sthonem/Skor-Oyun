@@ -54,7 +54,7 @@ header {
 /* Oyun Kartları */
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 240px));
     gap: 15px;
     padding: 20px;
     justify-content: center;
